@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  .main {
+    background-color: grey;
+    position: absolute;/* 这里注意！ */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+  }
+  .left-top,
+  .right-bottom {
+    width: 100px;
+    height: 100px;
+    border-radius: 200% 200%;
+    background-color: yellow;
+    position: absolute;
+  }
+
+
+
+</style>
+<body>
+    <div class="main">
+      <div class="left-top circle"></div>
+      <div class="right-bottom circle"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	background-color: #dedede;
+}
+
+/* header */
+header{
+	height: 60px;
+	background-color: #333;
+	line-height: 60px;
+}
+
+header h1{
+	margin-left: 40px;
+	float: left;
+}
+/* nav最后一个字掉下去了 */
+header nav ul{
+	float: right;
+	margin-right: 25px;
+}
+
+header nav li{
+	float: left;
+	margin-left: 25px;
+	width: 60px;
+}
+
+header li a{
+	color: #fff; 
+	text-decoration: none;
+}
+
+header li a:hover{
+	color: #afafaf;
+}
+
+/* main */
+
+aside,article{
+	background-color: #fff;
+	margin: 20px;
+	border: 1px solid #cdcdcd;
+	box-shadow: 1px 1px 2px #848484;/* 不够熟悉 */
+	font-size: 14px;
+}
+
+article{
+	padding: 40px 20px;
+}
+
+article h2{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 43px;
+}
+
+article h3{
+	font-size: 14px;
+	font-weight: bold;
+	color: #777;
+	line-height: 33px;
+}
+
+article div span{
+	font-size: 12px;
+	color: #777;
+	line-height: 33px;
+}
+
+article p{
+	line-height: 26px;
+	text-indent: 2em;
+}
+/* 怎么去掉无序列表前面的点 */
+article ul li{
+	list-style: none;
+	margin-left: 20px;
+	line-height: 25px;
+}
+
+article img{
+	margin: 20px 0;
+}
+
+article figure{
+	border: 1px solid #cecece;
+	width: 100px;
+	height: 104px;
+	margin: 15px 0 15px 60px;
+	text-align: center;
+	padding: 10px;
+}
+
+article figure figcaption{
+    margin-bottom: 5px;
+}
+
+article figure img{
+	width: 100px;
+	height: 81px;
+	margin:0;
+}
+
+article ol{
+	margin-left: 44px;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;/* 为表格设置合并边框模型 */
+}
+/* 表格的线框 */
+table thead{
+	background-color: #333;
+	color: #fff;
+}
+
+table tr{
+	height: 24px;
+}
+
+table tbody tr:last-child{
+    background-color: #ccc;
+}
+
+/* aside */
+aside{
+    margin: 40px 42px 20px 20px;
+    color: #000;
+    padding: 20px;
+}
+
+aside h2{
+	font-size: 15px;
+	border-left: 3px solid #ccc;
+	line-height: 38px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+aside form div{
+	margin-bottom: 12px;
+}
+
+/* 怎么让表单居中对齐显示???? */
+
+aside form button{
+	width: 100%;
+	background-color: #3355d0;
+	color: #fff;
+	font-size: 16px;
+	height: 38px;
+	border-radius: 7px;
+}
+
+aside form textarea{
+	vertical-align: top;
+	width: 763px;
+	height: 99px;
+}
+
+aside div label{
+	display: inline-block;
+	width: 373px;
+	text-align: right;
+	padding-right: 14px;
+}
+
+aside div p{
+	margin: 12px 0 24px 390px;
+	color: #dcd8d9;
+}
+
+aside div #rePas{
+    margin-top: 10px;
+}
+
+aside div .text{
+	height: 20px;
+}
+
+/* footer */
+footer{
+	height: 70px;
+	background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding-top: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

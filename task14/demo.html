@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 14</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+  	<li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+  
+  //第一步筛选出空气质量指数大于60的城市
+  //方法一
+  var arr = [];//创建一个新数组
+  for(var i = 0;i<aqiData.length;i++) {
+    if(aqiData[i][1]>60) { //如果污染指数大于60
+      arr.push(aqiData[i]);//将大于60的元素存入到新数组中
+    }
+  }
+  //方法二
+  //var arr = aqiData.filter(function(item){
+  //    return (item[1]>60);
+  //});
+
+  //第二步，将筛选出来的城市按指数从大到小排列
+  arr.sort(function(a,b){
+    return b[1]-a[1];//比较污染指数从大到小排序
+  })
+  
+  // //第三步，将结果按要求显示出来
+  // var list = '';//创建一个空对象
+  // for(var i=0;i<arr.length;i++){
+  //   list += '<li>第' + (i+1) + '名：' + arr[i][0] + ',' + arr[i][1];//遍历数组并赋给list
+  // }
+  // document.getElementById('aqi-list').innerHTML = list;//赋值给无序列表
+  //方法二
+  var fragment = document.createDocumentFragment();
+  var ul = document.getElementById('aqi-list');
+  var li = null;
+
+  for(var i = 0 ;i < arr.length;i++) {
+    li = document.createElement('li');
+    li.appendChild(document.createTextNode('第' + (i+1) + '名：' + arr[i].join('，')));
+    fragment.appendChild(li);
+  }
+
+  ul.appendChild(fragment);
+  
+})(); 
+
+</script>
+</body>
+</html>
