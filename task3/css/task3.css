@@ -1,0 +1,129 @@
+/* .main{
+	font-family: "微软雅黑";
+	margin: 20px;
+	padding: 20px;
+	background-color: #eee;
+	border: 1px solid #999;
+	position: relative;
+	height: 500px;
+}
+
+.main .team,.main .intro,.main .member{
+	border:1px solid #979797;
+    padding: 20px;
+    background-color: #fff;
+}
+.main .team{
+    position: relative;
+    width: 160px;
+}
+
+
+.main .team .logo{
+	width: 80px;
+	height: 80px;
+}
+
+.main .team h1{
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.main .intro{
+	position: absolute;
+	top: 20px;
+	left: 240px;
+	right: 160px;
+}
+
+.main .member{
+	position: absolute;
+	width: 80px;
+    right: 20px;
+    top: 20px;
+    padding-top: 0;
+}
+
+.main .member .member_logo{
+	margin-top: 20px;
+} */
+
+/* 用absolute脱离了文档流，父元素无法做到自适应高度 */
+
+.main{
+	font-family: "微软雅黑";
+	margin: 20px;
+	padding: 20px;
+	background-color: #eee;
+	border: 1px solid #999;
+}
+
+.main .team,.main .intro,.main .member{
+	border:1px solid #979797;
+    padding: 20px;
+    background-color: #fff;
+}
+.main .team{
+    width: 158px;
+    float: left;
+    position: relative;
+}
+
+
+.main .team .logo{
+	width: 80px;
+	height: 80px;
+}
+
+.main .team h1{
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+
+.main .intro{
+	margin-left: 220px;
+	margin-right: 140px;
+}
+
+.main .member{
+	width: 78px;
+    float: right;
+    padding-top: 0;
+}
+
+.main .member .member_logo{
+	margin-top: 20px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
