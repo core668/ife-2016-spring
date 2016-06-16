@@ -6,11 +6,13 @@
 <meta name="keywords" content=""/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width"/>
+<link rel="stylesheet" href="../reset.css">
 <link rel="stylesheet" href="css/task50.css"/>
 <link rel="shortcut icon" href="img/favicon.ico"/>
 <link rel="apple-touch-icon" href="img/touchicon.png"/>
 </head>
 <body>
+    <!-- 问卷列表页 -->
 	<div class="g-doc">
 	    <div class="g-hd">
 	        <h1>问卷管理</h1>
@@ -33,7 +35,7 @@
 	        	<tfoot>
 	        		<tr class="last">
 	        			<td colspan="5">
-	        				<input type="radio" name="questionnaire" value="" /> 全选 
+	        				<input type="checkbox" name="questionnaire" value="" /> 全选 
                             <button type="button">删除</button>
 	        			</td>
 	        		</tr>
@@ -41,7 +43,7 @@
 	        	<tbody>
 	        		<tr>
 	        			<td>
-	        				<input type="radio" name="questionnaire" value="questionnaire" />
+	        				<input type="checkbox" name="questionnaire" value="questionnaire" />
 	        			</td>
 	        			<td class="title">
 	        				这是我的第一份问卷
@@ -60,7 +62,7 @@
 	        		</tr>
 	        		<tr>
 	        			<td>
-	        				<input type="radio" name="questionnaire" value="questionnaire" />
+	        				<input type="checkbox" name="questionnaire" value="questionnaire" />
 	        			</td>
 	        			<td class="title">
 	        				这是我的第一份问卷
@@ -79,7 +81,7 @@
 	        		</tr>
 	        		<tr>
 	        			<td>
-	        				<input type="radio" name="questionnaire" value="questionnaire" />
+	        				<input type="checkbox" name="questionnaire" value="questionnaire" />
 	        			</td>
 	        			<td class="title">
 	        				这是我的第一份问卷
@@ -101,5 +103,23 @@
 	        </table>
 	    </div>
 	</div>
+	<!-- 删除问卷浮框页 -->
+	<div id="mask">
+	遮罩层
+    </div>
+
+    <div id="promot">
+		<div class="promptCon">
+		    <header>
+		        <h2>提示</h2>
+				<div id="close">×</div>
+			</header>
+			<section>
+				<p>确认要删除此问卷？</p>
+				<button type="button">确定</button>
+				<button type="button">取消</button>
+			</section>
+		</div>
+    </div>
 </body>
 </html> 
