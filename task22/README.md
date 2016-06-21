@@ -63,19 +63,20 @@
 
 
 
-
+Flex布局：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 ### 单词：
 binary /bai ne ri/ 二进制的，二元的，二态的
 struct [strʌkt] n. 结构；结构体；创建构架数组
-
-
-
-
-
-
-
-
+binarytree 二叉树 
+root 树根
+traversal 遍历
+preorder  前序
+inorder 中序
+postorder 后序
+BFS  宽度优先搜索（breadth first search）
+delegate 委托
+queue  队列
 
 
 
