@@ -1,0 +1,58 @@
+* {
+	font-family: "Microsoft YaHei UI", sans-serif;
+}
+.list {
+	width: 400px;
+	margin: 0 auto;
+}
+li {
+	list-style: none;
+}
+li p {
+	position: relative;
+	margin: 0;
+	padding: 16px 40px;
+	background: url("../images/f2.png") no-repeat 15px center;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+li p.clicked {
+	background: url("../images/f2.png") no-repeat 5px center #e2e2e2;
+}
+li p span {
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	display: none;
+}
+li p span:hover {
+	cursor: pointer;
+}
+li p span.add {
+	right: 40px;
+}
+li p span.delete {
+	right: 20px;
+}
+li p span.unfold {
+	right: 0;
+}
+#search {
+	display: block;
+	width: 400px;
+	height: 30px;
+	padding: 20px;
+	margin: 20px auto;
+	color: gray;
+}
+#search:focus {
+	color: black;
+}
